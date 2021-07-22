@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+      <div class="rules"></div>
+    <header>
+        <h1>Memory game!</h1>
+        <button class="rulesBtn">Rules</button>
+    </header>
+    
+    <div class="game">
+      <div class="mode">
+        <div class="size">
+          <h2>Choose board size</h2>
+            <div>
+                <input type="checkbox" class="boardS small" name="small"
+                       checked>
+                <label for="small">4x4</label>
+              </div>
+              <div>
+                <input type="checkbox" class="boardS medium" name="medium">
+                <label for="medium">4x6</label>
+              </div>
+              <div>
+                <input type="checkbox" class="boardS big" name="big">
+                <label for="big">6x6</label>
+              </div>
+        </div>
+        <div class="players">
+          <h2>Choose number of players</h2>
+            <div>
+                <input type="checkbox" class="noPlayers player2" name="player2"
+                       checked>
+                <label for="player2">2 players</label>
+              </div>
+              <div>
+                <input type="checkbox" class="noPlayers player3" name="player3">
+                <label for="player3">3 players</label>
+              </div>
+              <div>
+                <input type="checkbox" class="noPlayers player4" name="player4">
+                <label for="player4">4 players</label>
+              </div>
+        </div>
+        <button class="gameStart">START!</button>
+    </div>
+    <div class="scores hidden"></div>
+    <div class="tiles hidden"></div>
+    <div class="endgame hidden">
+      <span class="result"></span>
+      <button class="gameFinish">NEW GAME!</button>
+    </div>
+    </div>
+</div>
+<script src="gameCardsRoll.js"></script>
+<script src="checkboxes.js"></script>
+<script src="gameCreateBoard.js"></script>
+<script src="gameFunctionalityPlayers.js"></script>
+<script src="gameFunctionality.js"></script>
+<script src="gameMain.js"></script>
+</body>
+</html>
